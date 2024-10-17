@@ -1,5 +1,4 @@
 import { useEffect,useState } from "react"
-import Friend from "./User";
 
 export default function Users() {
     const [user, setUser] = useState([]);
