@@ -8,9 +8,15 @@ export default function Team() {
     function handleRemove() {
         setTeam(team-1)
     }
+
+    const teamStyle = {
+        border: '2px solid salmon',
+        padding: '20px',
+        margin:'15px'
+    }
     return (
-        <div>
-            <h2>Player:{ team}</h2>
+        <div style={teamStyle}>
+            <h2>Player:{ team<0? 'N/A':team}</h2>
         <button onClick={handleAdd}>Add</button>
         <button onClick={handleRemove}>Remove</button>
         </div>
